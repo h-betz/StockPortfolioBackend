@@ -12,6 +12,7 @@ class StockList(generics.ListCreateAPIView):
     """
     queryset = Stock.objects.all()
     serializer_class = StockSerializer
+    #lookup_field = 'name'
 
 class StockDetail(generics.RetrieveUpdateDestroyAPIView):
     """
@@ -19,3 +20,4 @@ class StockDetail(generics.RetrieveUpdateDestroyAPIView):
     """
     queryset = Stock.objects.all()
     serializer_class = StockSerializer
+    lookup_field = 'name'

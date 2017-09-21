@@ -5,8 +5,8 @@ class Stock(models.Model):
     #ticker = models.CharField(max_length=10)
     name = models.CharField(max_length=50)
     # ticker = models.CharField(max_length=10)
-    # open = models.FloatField()
-    # close = models.FloatField()
+    #open = models.FloatField()
+    #close = models.FloatField()
     # volume = models.IntegerField()
 
     def __str__(self):
